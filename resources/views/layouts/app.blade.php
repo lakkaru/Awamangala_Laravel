@@ -40,15 +40,21 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: brown" href="{{ route(Route::currentRouteName(), 'en') }}">{{'English'}}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: green" href="{{ route(Route::currentRouteName(), 'sin') }}">{{'සිංහල'}}</a>
+                            </li>
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link" href="{{ route('login', app()->getLocale()) }}">{{ __('lables.Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register', app()->getLocale()) }}">{{ __('lables.Register') }}</a>
                                 </li>
                             @endif
                         @else
@@ -61,10 +67,10 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('lables.Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout', app()->getLocale()) }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </div>
