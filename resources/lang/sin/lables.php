@@ -1,12 +1,14 @@
 <?php
     return[
+        'app name'=>'එක්සත් අවමංගල සමිතිය',
         'Confirm Password'=>'මුරපදය තහවුරු කරන්න',
         'Please confirm your password before continuing.'=>'ඉදිරියට යාමට පෙර කරුණාකර ඔබගේ මුරපදය තහවුරු කරන්න.',
         'Password'=>'මුරපදය',
         'Forgot Your Password?'=>'මුරපදය අමතක වුනාද?',
         'Name'=>'නම',
         'Email Address'=>'විද්යුත් තැපැල් ලිපිනය',
-        'Login'=> "ඇතුල් වීම",
+        'Admin Login'=> "පරිපාලක පිවිසුම",
+        'Member Login'=>'සාමාජික පිවිසුම',
         'Logout'=>'පිටවීම',
         'Remember Me'=>'මාව මතක තබා ගන්න',
         'Register'=>'ලියාපදිංචි වීම',
@@ -16,6 +18,7 @@
         'If you did not receive the email'=>'ඔබට විද්‍යුත් තැපෑල නොලැබුනේ නම්',
         'You are logged in!'=>'ඔබ පුරනය වී ඇත!',
         'Dashboard'=>'උපකරණ පුවරුව',
+        'Member Id'=>'සාමාජික අංකය',
 
 
         // button faces

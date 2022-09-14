@@ -1,12 +1,14 @@
 <?php
     return[
+        'app name'=>'Eksath Awamangala Samithiya',
         'Confirm Password'=>'Confirm Password',
         'Please confirm your password before continuing.'=>'Please confirm your password before continuing.',
         'Password'=>'Password',
         'Forgot Your Password?'=>'Forgot Your Password?',
         'Name'=>'Name',
         'Email Address'=>'Email Address',
-        'Login'=> "Login",
+        'Admin Login'=> "Admin Login",
+        'Member Login'=>'Member Login',
         'Logout'=>'Logout',
         'Remember Me'=>'Remember Me',
         'Register'=>'Register',
@@ -16,6 +18,7 @@
         'If you did not receive the email'=>'If you did not receive the email',
         'You are logged in!'=>'You are logged in!',
         'Dashboard'=>'Dashboard',
+        'Member Id'=>'Member Id',
 
 
         // button faces

@@ -5,12 +5,12 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('lables.Member Login') }}</div>
+                <div class="card-header">{{ __('lables.Admin Login') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login', app()->getLocale()) }}">
+                    <form method="POST" action="{{ route('admin.login.submit', app()->getLocale()) }}">
                         @csrf
-                        
+
                         <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('lables.Email Address') }}</label>
 
